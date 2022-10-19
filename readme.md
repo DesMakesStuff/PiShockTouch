@@ -27,11 +27,16 @@ There are many good tutorials on the upcoming avatar dynamics so this text one w
 
 9. Your avatar is now ready to be uploaded and use Haptic Love
 
+#Setting up Python(I know I should prob rewrite this in literally anything else)
+1. https://www.python.org/downloads/
+2. Run the instlaler make sure to specify to use Admin privileges, and MAKE SURE TO ADD PYTHON.EXE TO PATH
+3. Download PiShockTouch and extract into a folder of your choosing.
+4. 
 
 # Setting up PiShockTouch
 1. Go to https://www.python.org/downloads/ and download the latest version of python
 2. Download or clone the repository
 3. Run install.bat, or alternatively "pip install python-osc" "pip install requests"
-4.  Run PiShockTouch.py, you will be prompted for the LocalIP and Http Port you noted down from earlier Submit
-5.  You will be presented with options for strength and duration. Test these safely with vibration first, unless you like to live on the edge and trust my code(you shouldn't)
-6.  Press the test button, the collar should activate using the chosen settings.
+4. Run PiShockTouch.py, you will be prompted for the LocalIP and Http Port you noted down from earlier Submit
+5. You will be presented with options for strength and duration. Test these safely with vibration first, unless you like to live on the edge and trust my code(you shouldn't)
+6. Press the test button, the collar should activate using the chosen settings.
