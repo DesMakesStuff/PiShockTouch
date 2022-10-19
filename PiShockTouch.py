@@ -42,10 +42,10 @@ def BuildCommandJSON():
   Command = {
     "username":"Des",
     "Name":"OSC Touch Vibrate",
-    "Code":"241EF575494",
+    "Code":"",
     "Intensity":Pi_intensity,
     "Duration":Pi_duration,
-    "Apikey":"b68a8e38-03ad-4751-895b-676dfd7d8b75",
+    "Apikey":"",
     "OP":Pi_OP,
     }
 
