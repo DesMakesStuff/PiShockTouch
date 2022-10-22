@@ -1,5 +1,5 @@
 # PiShockTouch
-PiShockTouch is an open source application that allows the PiShockCollar to be driven by OSC avatar paramters, specifically VRC Contact Receivers
+PiShockTouch is an open source application that allows the PiShockCollar to become interractive to touch in VR Chat.
 
 # How it Works
 PiShockTouch relies on a VRC contact receiver to determine if someone has poked your collar. You can configure the poke to do anything the collar can do, adjusting for duration and intensity from the menu.
@@ -9,13 +9,13 @@ PiShockTouch relies on a VRC contact receiver to determine if someone has poked 
 # How to use PiShockTouch
 
 # Setting up your avatar requirements
-There are many good tutorials on the upcoming avatar dynamics so this text one will be brief. Search VRChat avatar dynamics and senders/receivers on youtube for many more resources on this.
+There are many good tutorials on 
 
-1. Add a component to the PiShockCollar Asset found in the PiShock discord "VRC Contact Receiver"
+1. Add a component to the PiShockCollar Asset or collar found in the PiShock discord. The component is called "VRC Contact Receiver"
 
-2. Under the VRC Contact Receiver window configure the options of the shape and the radius you want the receiver to activate on. Check allow self for self activation, and check allow others(Safety settings will let you change in game who can interact with this receiver)
+2. Under the VRC Contact Receiver window configure the options of the shape and the radius you want the receiver to activate on. Check allow others(Safety settings will let you change in game who can interact with this receiver)
 
-4. Add a collision tag for anybone you want from other avatars to activate this collider. For now I would set to Hand,Finger,Fingerindex
+4. Add a collision tag for any bone to activate this collider I suggest doing the finger bone as it will cut down on false triggers.
 
 5. Set the receiver type to constant
 
@@ -23,20 +23,43 @@ There are many good tutorials on the upcoming avatar dynamics so this text one w
 
 7. Set the value to 1, this is the value the collision will set when it is activated.
 
-8. Navigate to your network synced parameters. This will typically be in your FX folder/menu folder named "parameters". Add a new bool parameter CollarTouch default 0
+![image](https://user-images.githubusercontent.com/102766533/197355966-342288aa-b97d-44be-acee-ced53219ea90.png)
 
-9. Your avatar is now ready to be uploaded and use Haptic Love
 
-#Setting up Python(I know I should prob rewrite this in literally anything else)
-1. https://www.python.org/downloads/
-2. Run the instlaler make sure to specify to use Admin privileges, and MAKE SURE TO ADD PYTHON.EXE TO PATH
-3. Download PiShockTouch and extract into a folder of your choosing.
-4. 
 
-# Setting up PiShockTouch
-1. Go to https://www.python.org/downloads/ and download the latest version of python
-2. Download or clone the repository
-3. Run install.bat, or alternatively "pip install python-osc" "pip install requests"
-4. Run PiShockTouch.py, you will be prompted for the LocalIP and Http Port you noted down from earlier Submit
-5. You will be presented with options for strength and duration. Test these safely with vibration first, unless you like to live on the edge and trust my code(you shouldn't)
-6. Press the test button, the collar should activate using the chosen settings.
+
+8. Navigate to your network synced parameters. You can find this under you avatar descriptor usually labelled "Parameters". Add the following parameters:
+
+![image](https://user-images.githubusercontent.com/102766533/197355844-be871070-788c-4e2a-a2ca-9399c5b8851b.png)
+
+
+CollarTouch bool
+P_int float
+P_dur float
+P_op float
+
+![image](https://user-images.githubusercontent.com/102766533/197355879-77fdd7f9-1563-4e96-b42f-bd0942a32c51.png)
+
+
+
+
+9. Import the unitypackage asset included in the download. Navigate to your main menu found in the avatar descriptor. Add new control, submenu, and specify pishock as the submenu.
+
+![image](https://user-images.githubusercontent.com/102766533/197355907-8f2eb2cc-30a1-4ed0-aa6c-4c4302e7cfde.png)
+
+
+
+#Setting up The application
+1. Choose a version with OSC hub or standalone depending on needs
+2. Run the installer and provide your PiShock information and avatar ID, the avatar ID can be found here in your avatar descriptor:
+
+![image](https://user-images.githubusercontent.com/102766533/197356103-16b104e3-2bb3-44a2-a93e-65c086b619de.png)
+
+3. Ensure your collar is connected, online, and powered. 
+
+4. If all information is correct you can run PiShockTouchVRC.exe. The test should return 200 successful and your collar will beep once.  
+
+5. You are ready to go! Hop in game and access the PiShock menu to change things such as intensity duration and swap modes.
+
+
+
