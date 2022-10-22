@@ -9,7 +9,7 @@ PiShockTouch relies on a VRC contact receiver to determine if someone has poked 
 # How to use PiShockTouch
 
 # Setting up your avatar requirements
-There are many good tutorials on 
+
 
 1. Add a component to the PiShockCollar Asset or collar found in the PiShock discord. The component is called "VRC Contact Receiver"
 
