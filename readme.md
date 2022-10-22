@@ -53,12 +53,16 @@ P_op float
 2. Run the installer. Enter your PiShock Username.
 3. Generate a new sharecode specifically for PiShockTouch, add limits for safety if needed, and paste the code.
 4. Navigate to your PiShock account page and generate a new api key. Paste the key.
-5. You should see a message that successfully creates a config file. If for any reason there is an issue with your config, navigate to 
+6. Find and paste your avatar ID you can find it in your avatar descriptor
+![image](https://user-images.githubusercontent.com/102766533/197356103-16b104e3-2bb3-44a2-a93e-65c086b619de.png)
+
+
+7. You should see a message that successfully creates a config file. If for any reason there is an issue with your config, navigate to 
 C:\Users\YOURUSERNAME\AppData\LocalLow\VRChat\VRChat\OSC\YOURUSERPROFILEFORVRC\Avatars
 
 Find your avatar ID and there will be a copy named avtr_idxxxxxxx.bak this is the backup of your original parameters. Simply rename .json and delete the other file
 
-![image](https://user-images.githubusercontent.com/102766533/197356103-16b104e3-2bb3-44a2-a93e-65c086b619de.png)
+
 
 3. Ensure your collar is connected, online, and powered. 
 
