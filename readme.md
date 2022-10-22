@@ -24,6 +24,12 @@ There are many good tutorials on
 
 ![image](https://user-images.githubusercontent.com/102766533/197355966-342288aa-b97d-44be-acee-ced53219ea90.png)
 
+
+
+
+
+
+
 8. Navigate to your network synced parameters. You can find this under you avatar descriptor usually labelled "Parameters". Add the following parameters:
 
 ![image](https://user-images.githubusercontent.com/102766533/197355844-be871070-788c-4e2a-a2ca-9399c5b8851b.png)
