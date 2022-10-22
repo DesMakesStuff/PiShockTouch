@@ -21,7 +21,6 @@ There are many good tutorials on
 
 6. Type the parameter name as CollarTouch
 
-7. Set the value to 1, this is the value the collision will set when it is activated.
 
 ![image](https://user-images.githubusercontent.com/102766533/197355966-342288aa-b97d-44be-acee-ced53219ea90.png)
 
