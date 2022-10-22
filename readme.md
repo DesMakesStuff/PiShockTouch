@@ -24,9 +24,6 @@ There are many good tutorials on
 
 ![image](https://user-images.githubusercontent.com/102766533/197355966-342288aa-b97d-44be-acee-ced53219ea90.png)
 
-
-
-
 8. Navigate to your network synced parameters. You can find this under you avatar descriptor usually labelled "Parameters". Add the following parameters:
 
 ![image](https://user-images.githubusercontent.com/102766533/197355844-be871070-788c-4e2a-a2ca-9399c5b8851b.png)
@@ -38,9 +35,6 @@ P_dur float
 P_op float
 
 ![image](https://user-images.githubusercontent.com/102766533/197355879-77fdd7f9-1563-4e96-b42f-bd0942a32c51.png)
-
-
-
 
 9. Import the unitypackage asset included in the download. Navigate to your main menu found in the avatar descriptor. Add new control, submenu, and specify pishock as the submenu.
 
@@ -62,13 +56,13 @@ C:\Users\YOURUSERNAME\AppData\LocalLow\VRChat\VRChat\OSC\YOURUSERPROFILEFORVRC\A
 
 Find your avatar ID and there will be a copy named avtr_idxxxxxxx.bak this is the backup of your original parameters. Simply rename .json and delete the other file
 
+#Test the application
 
+1. Ensure your collar is connected, online, and powered. 
 
-3. Ensure your collar is connected, online, and powered. 
+2. If all information is correct you can run PiShockTouchVRC.exe. The test should return 200 successful and your collar will beep once.  
 
-4. If all information is correct you can run PiShockTouchVRC.exe. The test should return 200 successful and your collar will beep once.  
-
-5. You are ready to go! Hop in game and access the PiShock menu to change things such as intensity duration and swap modes.
+3. You are ready to go! Hop in game and access the PiShock menu to change things such as intensity duration and swap modes.
 
 
 
