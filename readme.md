@@ -42,7 +42,7 @@ P_op float
 
 
 
-#Setting up The application
+# Setting up The application
 1. Choose a version with OSC hub or standalone depending on needs
 2. Run the installer. Enter your PiShock Username.
 3. Generate a new sharecode specifically for PiShockTouch, add limits for safety if needed, and paste the code.
@@ -56,7 +56,7 @@ C:\Users\YOURUSERNAME\AppData\LocalLow\VRChat\VRChat\OSC\YOURUSERPROFILEFORVRC\A
 
 Find your avatar ID and there will be a copy named avtr_idxxxxxxx.bak this is the backup of your original parameters. Simply rename .json and delete the other file
 
-#Test the application
+# Test the application
 
 1. Ensure your collar is connected, online, and powered. 
 
