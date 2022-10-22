@@ -43,7 +43,8 @@ P_dur float
 
 P_op float
 
-![image](https://user-images.githubusercontent.com/102766533/197355879-77fdd7f9-1563-4e96-b42f-bd0942a32c51.png)
+![image](https://user-images.githubusercontent.com/102766533/197356880-967262cf-1eb1-44ad-8a70-abd889573499.png)
+
 
 9. Import the unitypackage asset included in the download. Navigate to your main menu found in the avatar descriptor. Add new control, submenu, and specify pishock as the submenu.
 
