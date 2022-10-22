@@ -36,6 +36,7 @@ PiShockTouch relies on a VRC contact receiver to determine if someone has poked 
 
 
 CollarTouch bool
+
 P_int float
 
 P_dur float
