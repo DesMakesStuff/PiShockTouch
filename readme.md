@@ -74,5 +74,21 @@ Find your avatar ID and there will be a copy named avtr_idxxxxxxx.bak this is th
 
 3. You are ready to go! Hop in game and access the PiShock menu to change things such as intensity duration and swap modes.
 
+# In game settings
+
+All PiShock settings can be managed through the ingame menu
 
 
+Intensity is 1 to 1 with the normal PiShock settings from 1% to 100%
+
+Duration is a percentage of the max time(15 seconds). Example 50% is around 7 seconds
+
+Finally mode is a float to save parameter/menu space the threshold values are as follows.
+
+![image](https://user-images.githubusercontent.com/102766533/197363941-73887b2c-6843-4c2f-b2a7-3e7b5dca90f7.png)
+
+
+
+0-10% Shock
+11-20% Vibrate
+21-100% Beep
