@@ -9,17 +9,20 @@ import shutil
 pi_user = ""
 pi_code = ""
 pi_key = ""
+pi_port = ""
 
 def init():
     global pi_user
     global pi_code
     global pi_key
+    global pi_port
 
     print("Welcome to the PiShockTouch Easy Installer!")
     pi_user = input("Please paste your PiShock Username: ").strip()
     pi_code = input("Please generate a new sharecode for pishock and paste here: ").strip()
     pi_key = input("Generate a new API key and paste here: ").strip()
     av_id = input("Please paste your avatar ID: ").strip()
+    pi_port = input("Please input the port you would like this application to run on ex 9003-9005: ").strip()
 
 
     usr = os.getlogin()
@@ -31,7 +34,7 @@ def init():
 
 def CreateLauncher():
     print("Creating Batch Launcher")
-    lines = ["@echo off\n","start OSCPortHub.exe\n","start PiShockTouchVRC.exe" + " " + pi_user + " " + pi_code + " " + pi_key + "\n"]
+    lines = ["@echo off\n","start PiShockTouchVRC.exe" + " " + pi_user + " " + pi_code + " " + pi_key + " " + pi_port + "\n"]
 
     with open("PSTLauncher.bat",'w+') as launcherfile:
         launcherfile.writelines(lines)
