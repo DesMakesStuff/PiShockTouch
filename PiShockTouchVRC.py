@@ -10,12 +10,15 @@ from pythonosc.osc_server import BlockingOSCUDPServer
 import math
 import argparse
 
+
+
 Pi_intensity = 15
 Pi_duration = 1
 Pi_OP = 2
 Pi_user = ""
 Pi_code = ""
 Pi_key = ""
+pi_port = ""
 
 def BuildCommandJSON():
   
@@ -54,12 +57,14 @@ def ParseArgs():
   global Pi_user
   global Pi_code
   global Pi_key
+  global pi_port
 
   parser = argparse.ArgumentParser(description='API info')
   
   parser.add_argument('P_user',type=str, help='PiShock Username')
   parser.add_argument('P_code',type=str, help='PiShock Sharecode')
   parser.add_argument('P_key',type=str, help='PiShock Key')
+  parser.add_argument('P_port',type=int,help='PiShock Port')
   
   args = parser.parse_args()
   
@@ -67,11 +72,14 @@ def ParseArgs():
   Pi_user = args.P_user
   Pi_code = args.P_code
   Pi_key = args.P_key
+  pi_port = args.P_port
+
 
   print("User configuration found!")
   print("Username:",Pi_user)
   print("Sharecode:",Pi_code)
   print("API Key: ",Pi_key)
+  print("App to run on port ", pi_port)
   print("*"*40)
   print("Sending test beep...")
   if(SendTest() == 200):
@@ -138,7 +146,9 @@ dispatcher.map("/avatar/*", detection_handler)
 dispatcher.set_default_handler(default_handler)
 
 ip = "127.0.0.1"
-port = 9003
+print("Started server on port ",pi_port)
+port = pi_port
+
 
 
 
